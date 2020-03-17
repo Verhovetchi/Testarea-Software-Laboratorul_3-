@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel = "icon" href = "ico/car.ico">
+		<link rel = "stylesheet" type = "text/css" href = "css/prog.css">
+		<title>
+			Programare
+		</title>
+  </head>
+  
+<body>
+	<form name="programare" method="POST">
+		<div id="label">
+			<label for="tipExamen">Tip examen:</label>
+			<br>
+			
+			<label for="nrFisa">Nr. fișei:</label>
+			<br>
+
+			<label for="Localitate">Localitate:</label>
+			<br>
+
+			<label for="data">Data:</label>
+			<br>
+			
+			<label for="Ora">Ora:</label>
+			<br>
+		</div>
+
+		<div id="progForm">
+			<input type="text" placeholder="Tip Examen" id="tipExamen">
+			<br>
+			
+			<input type="text" placeholder="Nr. fișei" id="nrFisa" maxlength="6">
+			<br>
+			
+			<select id="Localitate" name="ListaLocalitatilor" form="programare">
+	  			<option value="Chisinau">Chisinau</option>
+	  			<option value="Balti">Balti</option>
+				<option value="Orhei">Orhei</option>
+				<option value="Rascani">Rascani</option>
+				<option value="Straseni">Straseni</option>
+				<option value="Drochia">Drochia</option>
+				<option value="Edinet">Edinet</option>
+			</select>
+			<br>
+			
+			<input type="date" id="data">
+			<br>
+
+
+			<select id="Ora" name="Ora" form="programare">
+	  			<option value="10:00">10:00</option>
+	  			<option value="11:30">11:30</option>
+				<option value="13:00">13:00</option>
+				<option value="14:30">14:30</option>
+			</select>
+			<br>
+		</div>
+		<input type="submit" value="Trimite">
+	</form>
+  </body>
+</html>

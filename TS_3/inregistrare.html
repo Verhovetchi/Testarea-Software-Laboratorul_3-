@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset = "utf-8">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel = "icon" href = "ico/car.ico">
+		<link rel = "stylesheet" type = "text/css" href = "css/prog.css">
+		<title>
+			Inregistrare
+		</title>
+  </head>
+  
+<body>
+	<form name="inregistrare" method="POST">
+		<div id="label">
+			<label for="Nume">Nume:</label>
+			<br>
+			
+			<label for="Prenume">Prenume:</label>
+			<br>
+
+			<label for="Anul nasterii">Anul nasterii:</label>
+			<br>
+
+			<label for="IDNP">IDNP:</label>
+			<br>
+			
+			<label for="Raion">Raion:</label>
+			<br>
+
+			<label for="Localitate">Localitate:</label>
+			<br>
+
+			<label for="Email">Email:</label>
+			<br>
+
+			<label for="Password">Password:</label>
+			<br>
+
+			<label for="Confirm">Confirm password:</label>
+			<br>
+
+			<label for="">De acord cu:</label>
+			<br>
+		</div>
+
+		<div id="progForm">
+			<input type="text" placeholder="Nume" id="Nume">
+			<br>
+			
+			<input type="text" placeholder="Prenume" id="Prenume">
+			<br>
+
+			<input type="date" id="Anul nasterii">
+			<br>
+
+			<input type="text" placeholder="IDNP" id="IDNP" maxlength="13">
+			<br>
+			
+			<select id="Raion" name="ListaRaioanelor" form="inregistrare">
+	  			<option value="Chisinau">Chisinau</option>
+	  			<option value="Balti">Balti</option>
+				<option value="Orhei">Orhei</option>
+				<option value="Rascani">Rascani</option>
+				<option value="Straseni">Straseni</option>
+				<option value="Drochia">Drochia</option>
+				<option value="Edinet">Edinet</option>
+			</select>
+			<br>
+
+			<select id="Localitate" name="ListaLocalitati" form="inregistrare">
+	  			<option value="Chisinau">Chisinau</option>
+	  			<option value="Balti">Balti</option>
+				<option value="Orhei">Orhei</option>
+				<option value="Rascani">Rascani</option>
+				<option value="Straseni">Straseni</option>
+				<option value="Drochia">Drochia</option>
+				<option value="Edinet">Edinet</option>
+			</select>
+			<br>
+
+			<input type="Email" placeholder="Email" id="Email">
+			<br>
+
+			<input type="password" id="Password" placeholder="Password">
+			<br>
+
+			<input type="password" id="Confirm" placeholder="Confirm password">
+			<br>
+
+			R1<input type="checkbox">
+			R2<input type="checkbox">
+			R3<input type="checkbox">
+
+		</div>
+		<input type="submit" value="Trimite">
+	</form>
+  </body>
+</html>
